@@ -90,8 +90,7 @@ console.log(sum(1)(2)(3)); // 6
 
 4. Debouncing (REAL interview favorite)
 
-A programming technique that limits the execution of a function, ensuring it only runs after a certain period of inactivity
-
+A programming technique that limits the execution of a function, ensuring it only runs after it stops.
 function debounce(fn, delay) {
   let timer;
 
