@@ -59,3 +59,17 @@ function greet(name, callback) {
 greet("Karan", function(n) {
   console.log("Hello " + n);
 });
+
+ a HOF is a function that uses other functions, and a callback is a function that gets used by a HOF. 
+
+
+The Call Stack
+The Call Stack is a data structure that keeps track of the Execution Contexts (or "frames") for all the functions currently being executed.
+  Global Execution Context: When a script first starts, 
+  the entire code file is wrapped in the Global Execution Context (GEC), which is the first thing pushed onto the stack.
+
+  Execution Order: The JavaScript engine always executes the code that is on the very top of the stack.
+  
+  Popping: When a function finishes executing (it reaches a return statement or the end of its body), 
+  its FEC is popped (removed) from the Call Stack, and execution resumes in the context immediately below it.
+Stack Overflow is an error that occurs when the Call Stack exceeds its maximum fixed size.
