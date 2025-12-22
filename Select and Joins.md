@@ -1,6 +1,12 @@
 ## Get all employees with salary greater than 100k.
 select employee_id from salaries where base_salary+bonus>100000
 
+## To get the 5th highest salary
+SELECT *
+FROM salarytab
+ORDER BY salary DESC
+LIMIT 1 OFFSET 4;
+
 ## Retrieve distinct department names.
 select department_id, count(department_id) as number_of_employees from employees group by department_id
 
